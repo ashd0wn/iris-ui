@@ -1,30 +1,24 @@
-# Restreamer-UI
+﻿# iris-ui
 
-The user interface of the Restreamer for the connection to the [datarhei Core](https://github.com/datarhei/core)application.
+Web interface for the [Iris](https://github.com/ashd0wn/iris) project.
+Fork of [datarhei/restreamer-ui](https://github.com/datarhei/restreamer-ui).
 
-- React
-- Material-UI (MUI)
+## Role in the Iris stack
 
-## Development
+This repo contains the React frontend only.
+It is compiled and embedded into iris-core via go:embed at deploy time.
 
-### For the Restreamer interface:
+Do not use standalone -- use the deploy script from iris.
 
-```
-$ git clone github.com/datarhei/restreamer-ui
-$ cd restreamer-ui
-$ yarn install
-$ npm run start
-```
+## Build
 
-Connect the UI with a [datarhei Core](https://github.com/datarhei/core):
-http://localhost:3000?address=http://core-ip:core-port
+npm install --legacy-peer-deps
+PUBLIC_URL=/ npm run build
+# -> build/ ready to be copied into iris-core/app/ui/
 
-### To add/fix translations:
-Locales are located in `src/locals`
-```
-$ npm run i18n-extract:clean
-$ npm run i18n-compile
-```
+## Changes from upstream
 
-## License
-See the [LICENSE](./LICENSE) file for licensing information.
+- Iris branding (logo, colors, text)
+- homepage: / in package.json (no /ui/ prefix)
+- No Docker configuration
+
