@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import Grid from '@mui/material/Grid';
@@ -13,7 +13,7 @@ import Select from '../../../misc/Select';
 const id = 'restream';
 const name = 'Restream';
 const version = '1.0';
-const stream_key_link = 'https://restream.io/settings/streaming-setup?from=datarhei/restreamer';
+const stream_key_link = 'https://restream.io/settings/streaming-setup?from=Iris/restreamer';
 const description = (
 	<Trans>
 		Transmit the main source to the Restream RTMP Service. More details about the settings can be found{' '}
@@ -26,12 +26,12 @@ const description = (
 const image_copyright = <Trans>Please contact the operator of the service and check what happens.</Trans>;
 const author = {
 	creator: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 	maintainer: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 };
 const category = 'platform';

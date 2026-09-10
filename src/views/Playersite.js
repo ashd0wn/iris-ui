@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { useLingui } from '@lingui/react';
@@ -344,7 +344,7 @@ export default function Playersite(props) {
 								<Grid item xs={12}>
 									<Typography variant="body1">
 										<Trans>
-											In addition to the player, the Restreamer offers a complete landingpage, which you can use to present your live
+											In addition to the player, the Iris offers a complete landingpage, which you can use to present your live
 											stream easily and quickly.
 										</Trans>
 									</Typography>
@@ -454,7 +454,7 @@ export default function Playersite(props) {
 								</Grid>
 								<Grid item xs={12}>
 									<Checkbox
-										label={<Trans>Support datarhei Restreamer</Trans>}
+										label={<Trans>Support Iris Iris</Trans>}
 										checked={$settings.support}
 										disabled={!$settings.playersite}
 										onChange={handleChange('support')}

@@ -1,0 +1,26 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="iris-g" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7CB4FF"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E4D8C"/>
+    </radialGradient>
+  </defs>
+  <!-- Eye shape -->
+  <path d="M10 100 Q55 30 100 30 Q145 30 190 100 Q145 170 100 170 Q55 170 10 100Z"
+        fill="#07111E" stroke="#1E4D8C" stroke-width="4"/>
+  <!-- Iris circle -->
+  <circle cx="100" cy="100" r="42" fill="url(#iris-g)"/>
+  <!-- Pupil -->
+  <circle cx="100" cy="100" r="18" fill="#07111E"/>
+  <!-- Highlight -->
+  <circle cx="112" cy="88" r="7" fill="#7CB4FF" opacity="0.85"/>
+  <!-- Arc (rainbow goddess hint) -->
+  <path d="M30 100 Q100 20 170 100" stroke="#B89A3A" stroke-width="2"
+        fill="none" opacity="0.35" stroke-dasharray="6 8"/>
+  <!-- Corner meanders -->
+  <path d="M16 85 L16 70 L30 70" stroke="#B89A3A" stroke-width="2" fill="none" opacity="0.55"/>
+  <path d="M170 70 L184 70 L184 85" stroke="#B89A3A" stroke-width="2" fill="none" opacity="0.55"/>
+  <path d="M16 115 L16 130 L30 130" stroke="#B89A3A" stroke-width="2" fill="none" opacity="0.55"/>
+  <path d="M170 130 L184 130 L184 115" stroke="#B89A3A" stroke-width="2" fill="none" opacity="0.55"/>
+</svg>

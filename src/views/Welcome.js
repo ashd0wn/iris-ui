@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import { Trans } from '@lingui/macro';
@@ -19,14 +19,14 @@ export default function Welcome(props) {
 		<Paper xs={12} md={6} className="PaperM">
 			<Grid container justifyContent="center" spacing={2}>
 				<Grid item xs={12}>
-					<PaperThumb image={welcomeImage} title="Welcome to Restreamer v2" height="200px" />
+					<PaperThumb image={welcomeImage} title="Welcome to Iris v2" height="200px" />
 				</Grid>
 				<Grid item xs={12}></Grid>
 				<Grid item xs={12}>
 					<Typography align="center">
 						<Trans>
-							Welcome to Restreamer v2, the solution for fast and easy video publishing. Free for private and commercial use. Further help in the{' '}
-							<Link color="secondary" target="_blank" href="https://docs.datarhei.com">
+							Welcome to Iris v2, the solution for fast and easy video publishing. Free for private and commercial use. Further help in the{' '}
+							<Link color="secondary" target="_blank" href="https://docs.github.com/ashd0wn">
 								docs
 							</Link>
 							.

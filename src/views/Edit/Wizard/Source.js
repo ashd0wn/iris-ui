@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import Button from '@mui/material/Button';
@@ -18,7 +18,7 @@ export default function Source(props) {
 					<Typography>
 						<Trans>
 							Select whether you pull the stream from a <strong>network source</strong> (such as a network camera) or the{' '}
-							<strong>internal RTMP server</strong> (e.g., OBS streams to the Restreamer).
+							<strong>internal RTMP server</strong> (e.g., OBS streams to the Iris).
 						</Trans>
 					</Typography>
 				</Grid>

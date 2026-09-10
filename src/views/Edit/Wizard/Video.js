@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import Button from '@mui/material/Button';
@@ -49,7 +49,7 @@ export default function Video(props) {
 							<Typography textAlign="center">
 								<Trans>
 									The source doesn't provide any compatible video streams. Please check the{' '}
-									<Link color="secondary" target="_blank" href="https://github.com/datarhei/restreamer">
+									<Link color="secondary" target="_blank" href="https://github.com/Iris/restreamer">
 										requirements
 									</Link>
 									.

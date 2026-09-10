@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { faVimeoV } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,12 +14,12 @@ const stream_key_link = '';
 const image_copyright = <Trans>More about licenses here</Trans>;
 const author = {
 	creator: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 	maintainer: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 };
 const category = 'platform';

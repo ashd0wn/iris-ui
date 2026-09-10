@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { isMobile } from 'react-device-detect';
 import { Trans } from '@lingui/macro';
@@ -337,7 +337,7 @@ function Resources(props) {
 						)}
 					</ListItem>
 					{/* <ListItem divider>
-						<Button variant="service" color="primary" fullWidth size="large" component="a" href="https://service.datarhei.com" target="blank">
+						<Button variant="service" color="primary" fullWidth size="large" component="a" href="https://service.github.com/ashd0wn" target="blank">
 							<Trans>More details</Trans>
 						</Button>
 					</ListItem> */}

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import makeStyles from '@mui/styles/makeStyles';
 
@@ -13,12 +13,12 @@ const useStyles = makeStyles((theme) => ({
 export default function Logo(props) {
 	const classes = useStyles();
 
-	let link = 'https://datarhei.com';
+	let link = 'https://github.com/ashd0wn';
 
 	// eslint-disable-next-line no-useless-escape
 	return (
 		<a href={link} className={classes.Logo} target="_blank" rel="noopener noreferrer">
-			<img src={company_logo} alt="datarhei logo" />
+			<img src={company_logo} alt="Iris logo" />
 		</a>
 	);
 }

@@ -1,25 +1,26 @@
-{
-	"short_name": "Restreamer",
-	"name": "Restreamer",
-	"icons": [
-		{
-			"src": "favicon.ico",
-			"sizes": "64x64 32x32 24x24 16x16",
-			"type": "image/x-icon"
-		},
-		{
-			"src": "logo192.png",
-			"type": "image/png",
-			"sizes": "192x192"
-		},
-		{
-			"src": "logo512.png",
-			"type": "image/png",
-			"sizes": "512x512"
-		}
-	],
-	"start_url": ".",
-	"display": "standalone",
-	"theme_color": "#282728",
-	"background_color": "#282728"
+﻿{
+    "icons":  [
+                  {
+                      "src":  "favicon.ico",
+                      "sizes":  "64x64 32x32 24x24 16x16",
+                      "type":  "image/x-icon"
+                  },
+                  {
+                      "src":  "logo192.png",
+                      "type":  "image/png",
+                      "sizes":  "192x192"
+                  },
+                  {
+                      "src":  "logo512.png",
+                      "type":  "image/png",
+                      "sizes":  "512x512"
+                  }
+              ],
+    "start_url":  ".",
+    "display":  "standalone",
+    "name":  "Iris",
+    "short_name":  "Iris",
+    "description":  "Iris -- open-source bare-metal streaming server",
+    "theme_color":  "#07111E",
+    "background_color":  "#07111E"
 }

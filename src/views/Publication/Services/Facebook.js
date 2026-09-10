@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,17 +12,17 @@ import FormInlineButton from '../../../misc/FormInlineButton';
 const id = 'facebook';
 const name = 'Facebook Live';
 const version = '1.0';
-const stream_key_link = 'https://www.facebook.com/live/producer?ref=datarhei/restreamer';
+const stream_key_link = 'https://www.facebook.com/live/producer?ref=Iris/restreamer';
 const description = <Trans>Live-Streaming to Facebook Live RTMP service</Trans>;
 const image_copyright = <Trans>More about licenses here</Trans>;
 const author = {
 	creator: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 	maintainer: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 };
 const category = 'platform';

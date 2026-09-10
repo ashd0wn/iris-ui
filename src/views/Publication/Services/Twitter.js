@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { v4 as uuidv4 } from 'uuid';
@@ -38,12 +38,12 @@ const image_copyright = (
 
 const author = {
 	creator: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 	maintainer: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 };
 

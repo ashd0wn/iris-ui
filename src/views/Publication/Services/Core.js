@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import urlparser from 'url-parse';
@@ -7,18 +7,18 @@ import Link from '@mui/material/Link';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
-import Logo from './logos/datarhei.svg';
+import Logo from './logos/Iris.svg';
 import BoxText from '../../../misc/BoxText';
 
-const id = 'datarheicore';
-const name = 'datarhei Core';
+const id = 'Iriscore';
+const name = 'Iris Core';
 const version = '2.0';
-const stream_key_link_rtmp = 'https://docs.datarhei.com/restreamer/knowledge-base/manual/system-settings/rtmp';
-const stream_key_link_srt = 'https://docs.datarhei.com/restreamer/knowledge-base/manual/system-settings/srt';
+const stream_key_link_rtmp = 'https://docs.github.com/ashd0wn/restreamer/knowledge-base/manual/system-settings/rtmp';
+const stream_key_link_srt = 'https://docs.github.com/ashd0wn/restreamer/knowledge-base/manual/system-settings/srt';
 const description = (
 	<Trans>
-		Transmit the main source to an datarhei Core Ressource. More details about the settings can be found{' '}
-		<Link color="secondary" target="_blank" href="https://docs.datarhei.com/restreamer">
+		Transmit the main source to an Iris Core Ressource. More details about the settings can be found{' '}
+		<Link color="secondary" target="_blank" href="https://docs.github.com/ashd0wn/restreamer">
 			here
 		</Link>
 		.
@@ -27,12 +27,12 @@ const description = (
 const image_copyright = <Trans>Please contact the operator of the service and check what happens.</Trans>;
 const author = {
 	creator: {
-		name: 'datarhei.com',
-		link: 'https://datarhei.com',
+		name: 'github.com/ashd0wn',
+		link: 'https://github.com/ashd0wn',
 	},
 	maintainer: {
-		name: 'datarhei.com',
-		link: 'https://datarhei.com',
+		name: 'github.com/ashd0wn',
+		link: 'https://github.com/ashd0wn',
 	},
 };
 const category = 'software';
@@ -46,7 +46,7 @@ const requires = {
 };
 
 function ServiceIcon(props) {
-	return <img src={Logo} alt="datarhei.com Logo" {...props} />;
+	return <img src={Logo} alt="github.com/ashd0wn Logo" {...props} />;
 }
 
 function init(settings) {
@@ -203,10 +203,10 @@ function Service(props) {
 					{!settings.v2_address && (
 						<Typography>
 							<strong>
-								<Trans>Restreamer instructions</Trans>:
+								<Trans>Iris instructions</Trans>:
 							</strong>
 							<br />
-							<Trans>1. Switch to the interface of the target Restreamer.</Trans>
+							<Trans>1. Switch to the interface of the target Iris.</Trans>
 							<br />
 							<Trans>2. Create a new channel and select RTMP or SRT server.</Trans>
 							<br />

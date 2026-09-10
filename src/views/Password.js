@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import Backdrop from '@mui/material/Backdrop';
@@ -157,17 +157,17 @@ export default function ResetPassword(props) {
 						{$restart.timeout === false ? (
 							<React.Fragment>
 								<Typography variant="body1">
-									<Trans>Restarting Restreamer Core ...</Trans>
+									<Trans>Restarting Iris Core ...</Trans>
 								</Typography>
 								<LinearProgress sx={{ mt: '1em' }} />
 							</React.Fragment>
 						) : (
 							<React.Fragment>
 								<Typography variant="body1">
-									<Trans>Reconnecting to Restreamer Core failed.</Trans>
+									<Trans>Reconnecting to Iris Core failed.</Trans>
 								</Typography>
 								<Typography variant="body1" sx={{ mt: '1em' }}>
-									<Trans>This is not necessarily an error. However, it may take a bit longer for Restreamer Core to restart..</Trans>
+									<Trans>This is not necessarily an error. However, it may take a bit longer for Iris Core to restart..</Trans>
 								</Typography>
 							</React.Fragment>
 						)}

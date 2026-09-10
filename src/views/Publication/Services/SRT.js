@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { faTools } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -33,12 +33,12 @@ const description = (
 const image_copyright = <Trans>Please contact the operator of the service and check what happens.</Trans>;
 const author = {
 	creator: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 	maintainer: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 };
 const category = 'universal';

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Trans } from '@lingui/macro';
@@ -33,12 +33,12 @@ const image_copyright = <Trans>This is to mention the copyright regulations for 
 // author mentiones the author of this service.
 const author = {
 	creator: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 	maintainer: {
-		name: 'datarhei',
-		link: 'https://github.com/datarhei',
+		name: 'Iris',
+		link: 'https://github.com/Iris',
 	},
 };
 

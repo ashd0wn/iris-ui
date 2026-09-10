@@ -1,4 +1,4 @@
-/* eslint-disable import/no-anonymous-default-export */
+﻿/* eslint-disable import/no-anonymous-default-export */
 export default {
 	common: {
 		// MuiButton, ChannelList.js, index.js, Player.js
@@ -16,7 +16,7 @@ export default {
 		// MuiListItem, Progress.js (Progress boxes - danger)
 		box_danger: 'rgb(193, 39, 45)',
 		// MuiButton, global.js (Page background)
-		button_disabled: '#333333',
+		button_disabled: '#0D1B2E',
 		// MuiButton, MuiMenu, MuiToggleButton, MultiSelectOption.js (MenuItem)
 		dark1: 'rgba(0, 0, 0, .1)',
 		// MuiOutlinedInput, BoxText.js (color=dark)

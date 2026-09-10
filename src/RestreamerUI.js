@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import makeStyles from '@mui/styles/makeStyles';
 import Alert from '@mui/material/Alert';
@@ -15,7 +15,7 @@ import Footer from './Footer';
 import I18n from './I18n';
 import Header from './Header';
 import * as M from './utils/metadata';
-import Restreamer from './utils/restreamer';
+import Iris from './utils/restreamer';
 import Router from './Router';
 import Views from './views';
 import { UI as Version } from './version';
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function RestreamerUI(props) {
+export default function IrisUI(props) {
 	const classes = useStyles();
 
 	const [$state, setState] = React.useState({
@@ -121,7 +121,7 @@ export default function RestreamerUI(props) {
 	};
 
 	const handleMount = async () => {
-		restreamer.current = new Restreamer(props.address);
+		restreamer.current = new Iris(props.address);
 		restreamer.current.AddListener((event) => {
 			notify(event.severity, event.type, event.message);
 		});
@@ -556,6 +556,6 @@ export default function RestreamerUI(props) {
 	);
 }
 
-RestreamerUI.defaultProps = {
+IrisUI.defaultProps = {
 	address: '',
 };

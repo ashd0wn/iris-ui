@@ -1,4 +1,4 @@
-import { i18n } from '@lingui/core';
+﻿import { i18n } from '@lingui/core';
 import { t } from '@lingui/macro';
 import { v4 as uuidv4 } from 'uuid';
 import { jwtDecode } from 'jwt-decode';
@@ -15,7 +15,7 @@ import * as Version from '../version';
 import API from './api';
 import { anonymize } from './anonymizer';
 
-class Restreamer {
+class Iris {
 	constructor(address) {
 		try {
 			new URL(address);
@@ -469,7 +469,7 @@ class Restreamer {
 
 		const about = this._initAbout(val);
 
-		if (about.app !== 'datarhei-core') {
+		if (about.app !== 'iris-core') {
 			return null;
 		}
 
@@ -1114,8 +1114,8 @@ class Restreamer {
 	async _discoverChannels() {
 		const channels = new Map();
 
-		const reIngest = new RegExp('^restreamer-ui:ingest:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$');
-		const reEgress = new RegExp('^restreamer-ui:egress:([0-9a-z]+):([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$');
+		const reIngest = new RegExp('^iris-ui:ingest:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$');
+		const reEgress = new RegExp('^iris-ui:egress:([0-9a-z]+):([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$');
 
 		const processes = await this._listProcesses(['metadata']);
 		const egresses = new Map();
@@ -1227,7 +1227,7 @@ class Restreamer {
 	CreateChannel(name) {
 		const channelid = uuidv4();
 		this.channels.set(channelid, {
-			id: `restreamer-ui:ingest:${channelid}`,
+			id: `iris-ui:ingest:${channelid}`,
 			channelid: channelid,
 			name: name,
 			egresses: new Map(),
@@ -1704,7 +1704,7 @@ class Restreamer {
 
 		// 3.1 Injects a metadata link as title
 		const metadata = `${this.GetPublicHTTPAddress()}/${channel.channelid}/oembed.json`;
-		const metadata_options = ['-metadata', `title=${metadata}`, '-metadata', 'service_provider=datarhei-Restreamer'];
+		const metadata_options = ['-metadata', `title=${metadata}`, '-metadata', 'service_provider=Iris-Iris'];
 		output.options.push(...metadata_options);
 
 		// Manifest versions
@@ -2461,7 +2461,7 @@ class Restreamer {
 	// Egress
 
 	GetEgressId(service, id) {
-		return `restreamer-ui:egress:${service}:${id}`;
+		return `iris-ui:egress:${service}:${id}`;
 	}
 
 	// Get process information for egress
@@ -2714,7 +2714,7 @@ class Restreamer {
 
 		const index = uuidv4();
 		const egress = {
-			id: `restreamer-ui:egress:${service}:${index}`,
+			id: `iris-ui:egress:${service}:${index}`,
 			index: index,
 			service: service,
 			channelid: channel.channelid,
@@ -2739,7 +2739,7 @@ class Restreamer {
 			return [];
 		}
 
-		const re = new RegExp('^restreamer-ui:egress:');
+		const re = new RegExp('^iris-ui:egress:');
 
 		let list = await this._listProcesses(['state'], channel.channelid);
 
@@ -2882,7 +2882,7 @@ class Restreamer {
 			let response = null;
 
 			try {
-				response = await fetch('https://service.datarhei.com/api/v1/app_version', {
+				response = await fetch('https://service.github.com/ashd0wn/api/v1/app_version', {
 					method: 'PUT',
 					headers: {
 						'Content-Type': 'application/json',
@@ -2954,7 +2954,7 @@ class Restreamer {
 	// Private system related function
 
 	async _setMetadata(data) {
-		const [, err] = await this._call(this.api.SetMetadata, 'restreamer-ui', data);
+		const [, err] = await this._call(this.api.SetMetadata, 'iris-ui', data);
 		if (err !== null) {
 			return false;
 		}
@@ -2963,7 +2963,7 @@ class Restreamer {
 	}
 
 	async _getMetadata() {
-		const [val, err] = await this._call(this.api.GetMetadata, 'restreamer-ui');
+		const [val, err] = await this._call(this.api.GetMetadata, 'iris-ui');
 		if (err !== null) {
 			return null;
 		}
@@ -3018,8 +3018,8 @@ class Restreamer {
 			proc.metadata = {};
 		}
 
-		if (proc.metadata['restreamer-ui']) {
-			proc.metadata = proc.metadata['restreamer-ui'];
+		if (proc.metadata['iris-ui']) {
+			proc.metadata = proc.metadata['iris-ui'];
 		} else {
 			proc.metadata = {};
 		}
@@ -3151,7 +3151,7 @@ class Restreamer {
 	}
 
 	async _setProcessMetadata(id, data) {
-		const [, err] = await this._call(this.api.ProcessSetMetadata, id, 'restreamer-ui', data);
+		const [, err] = await this._call(this.api.ProcessSetMetadata, id, 'iris-ui', data);
 		if (err !== null) {
 			return false;
 		}
@@ -3160,7 +3160,7 @@ class Restreamer {
 	}
 
 	async _getProcessMetadata(id) {
-		const [val, err] = await this._call(this.api.ProcessGetMetadata, id, 'restreamer-ui');
+		const [val, err] = await this._call(this.api.ProcessGetMetadata, id, 'iris-ui');
 		if (err !== null) {
 			return null;
 		}
@@ -3575,4 +3575,4 @@ function parseRFC3339Date(d) {
 	return new Date(Date.UTC(year, month - 1, day, hour, minute - tzOffset, second, msec));
 }
 
-export default Restreamer;
+export default Iris;

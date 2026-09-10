@@ -98,5 +98,6 @@
 
                     },
     "homepage":  "/",
-    "author":  "ashd0wn"
+    "author":  "ashd0wn",
+    "description":  "Iris web interface -- open-source bare-metal streaming server"
 }

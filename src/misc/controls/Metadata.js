@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import makeStyles from '@mui/styles/makeStyles';
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 function init(settings) {
 	const initSettings = {
 		name: 'Livestream',
-		description: 'Live from earth. Powered by datarhei Restreamer.',
+		description: 'Live from earth. Powered by Iris Iris.',
 		author: {},
 		...settings,
 	};

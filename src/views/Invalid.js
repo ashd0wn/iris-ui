@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -29,11 +29,11 @@ export default function Invalid(props) {
 			<PaperHeader title={<Trans>Error</Trans>} onAbort={() => window.location.reload()} />
 			<PaperContent>
 				<Typography>
-					<Trans>There was an error connecting to Restreamer Core at {props.address}.</Trans>
+					<Trans>There was an error connecting to Iris Core at {props.address}.</Trans>
 				</Typography>
 				{$mixed === true && (
 					<Typography sx={{ mt: '1em' }}>
-						<Trans>Connecting to Restreamer Core failed probably because of mixed content.</Trans>
+						<Trans>Connecting to Iris Core failed probably because of mixed content.</Trans>
 					</Typography>
 				)}
 			</PaperContent>

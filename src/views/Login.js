@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import Backdrop from '@mui/material/Backdrop';
@@ -316,7 +316,7 @@ export default function Login(props) {
 										<Trans>Social-login (OAuth2, 2FA)</Trans>
 									</Typography>
 									<Typography>
-										<Trans>Hosted Restreamer interface</Trans>
+										<Trans>Hosted Iris interface</Trans>
 									</Typography>
 									<Typography>
 										<Trans>Advanced monitoring</Trans>
@@ -328,7 +328,7 @@ export default function Login(props) {
 							</Grid>
 						</Grid>
 						<Grid item xs={12}>
-							<Button variant="service" color="primary" fullWidth size="large" href="https://service.datarhei.com" target="blank">
+							<Button variant="service" color="primary" fullWidth size="large" href="https://service.github.com/ashd0wn" target="blank">
 								<Trans>Sign up (free)</Trans>
 							</Button>
 						</Grid>
@@ -341,8 +341,8 @@ export default function Login(props) {
 								<Grid item xs={12} align="center">
 									<Typography>
 										<Trans>
-											Use Auth0 for your running Restreamer Core. More{' '}
-											<Link color="secondary" target="_blank" href="https://github.com/datarhei">
+											Use Auth0 for your running Iris Core. More{' '}
+											<Link color="secondary" target="_blank" href="https://github.com/Iris">
 												details
 											</Link>
 											.

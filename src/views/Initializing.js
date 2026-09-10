@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -18,7 +18,7 @@ export default function Invalid(props) {
 					</Grid>
 					<Grid item xs={12}>
 						<Typography>
-							<Trans>Connecting to Restreamer Core ...</Trans>
+							<Trans>Connecting to Iris Core ...</Trans>
 						</Typography>
 					</Grid>
 				</Grid>

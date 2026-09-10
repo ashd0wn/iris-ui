@@ -1,4 +1,4 @@
-{
+﻿{
 	"Error": {
 		"origin": [["src/views/Settings.js", 248]]
 	},
@@ -47,7 +47,7 @@
 	"Allow all origins": {
 		"origin": [["src/views/Settings.js", 333]]
 	},
-	"All changes will be applied after restarting the Restreamer-API": {
+	"All changes will be applied after restarting the Iris-API": {
 		"origin": [["src/views/Settings.js", 357]]
 	},
 	"Save": {

@@ -1,4 +1,4 @@
-const isAvailable = () => {
+﻿const isAvailable = () => {
 	// https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
 	let storage = null;
 
@@ -32,7 +32,7 @@ const Set = (key, value) => {
 		return;
 	}
 
-	window.localStorage.setItem('@@restreamer-ui@@' + key, value);
+	window.localStorage.setItem('@@iris-ui@@' + key, value);
 };
 
 const Get = (key) => {
@@ -40,7 +40,7 @@ const Get = (key) => {
 		return null;
 	}
 
-	return window.localStorage.getItem('@@restreamer-ui@@' + key);
+	return window.localStorage.getItem('@@iris-ui@@' + key);
 };
 
 const Remove = (key) => {
@@ -48,7 +48,7 @@ const Remove = (key) => {
 		return;
 	}
 
-	window.localStorage.removeItem('@@restreamer-ui@@' + key);
+	window.localStorage.removeItem('@@iris-ui@@' + key);
 };
 
 export { Set, Get, Remove };
