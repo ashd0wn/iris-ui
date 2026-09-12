@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 import makeStyles from '@mui/styles/makeStyles';
 import Alert from '@mui/material/Alert';
@@ -15,7 +15,7 @@ import Footer from './Footer';
 import I18n from './I18n';
 import Header from './Header';
 import * as M from './utils/metadata';
-import Iris from './utils/restreamer';
+import Restreamer from './utils/restreamer';
 import Router from './Router';
 import Views from './views';
 import { UI as Version } from './version';

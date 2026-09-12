@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
@@ -7,7 +7,7 @@ import '@fontsource/roboto';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import theme from './theme';
-import IrisUI from './IrisUI';
+import RestreamerUI from './RestreamerUI';
 
 let address = window.location.protocol + '//' + window.location.host;
 if (window.location.pathname.endsWith('/ui/')) {

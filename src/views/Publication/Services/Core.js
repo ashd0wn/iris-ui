@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 import { Trans } from '@lingui/macro';
 import urlparser from 'url-parse';
@@ -7,7 +7,7 @@ import Link from '@mui/material/Link';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
-import Logo from './logos/Iris.svg';
+import Logo from './logos/Restreamer.svg';
 import BoxText from '../../../misc/BoxText';
 
 const id = 'Iriscore';
