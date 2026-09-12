@@ -1,5 +1,4 @@
-﻿{
-    "name":  "iris-ui",
+{
     "version":  "1.14.0",
     "bundle":  "restreamer-v2.12.0",
     "private":  false,
@@ -97,7 +96,8 @@
     "resolutions":  {
 
                     },
-    "homepage":  "/",
     "author":  "ashd0wn",
-    "description":  "Iris web interface -- open-source bare-metal streaming server"
+    "description":  "Iris web interface -- open-source bare-metal streaming server",
+    "name":  "iris-ui",
+    "homepage":  "/ui"
 }
